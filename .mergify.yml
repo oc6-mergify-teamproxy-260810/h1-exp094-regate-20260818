@@ -3,11 +3,11 @@ commands_restrictions:
     conditions:
       - sender = onecursor6-oss
 queue_rules:
-  - name: sg-exp094-1787054193
+  - name: h1-exp094-regate-20260818
     queue_conditions:
-      - base = sg-exp094-target-1787054193
+      - base ~= ^h1-exp094-regate-
     merge_conditions:
-      - check-success = SG_EXP094_RELEASE_1787054193
+      - check-success = H1_EXP094_REGATE_20260818
     branch_protection_injection_mode: merge
     batch_size: 1
     batch_max_wait_time: 30
